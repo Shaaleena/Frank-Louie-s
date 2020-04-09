@@ -1,0 +1,488 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+p{
+  opacity: 0.7;
+}
+header{
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  height: 700px;
+}
+
+ul{
+    position: sticky;
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+nav ul li {
+float: left;
+}
+#logo{
+  width:350px;
+  float: left;
+  overflow: hidden;
+  top:-70px;
+  left: 10px;
+  position: absolute;
+  z-index: 1;
+  height: auto;
+}
+.nav li a {
+  display:block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+.burger{
+  display: none;
+}
+#hero{
+  margin-top: 8%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('istockphoto-184979776-2048x2048.jpg');;
+  filter: brightness(50%);
+  animation-name: heroimage;
+  animation-duration:2s;
+  animation-delay: -1s;
+  animation-timing-function: linear;
+}
+.bottom-right{
+  font-size: 100px;
+}
+.bottom-right {
+  color: #fefefa;
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  opacity: 0.9;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: -1s;
+  animation-timing-function: linear;
+
+}
+@keyframes heroimage {
+  0%{filter: brightness(100%);}
+  25%{filter: brightness(90%);}
+  50%{filter: brightness(80%);}
+  75%{filter: brightness(70%);}
+  100%{filter: brightness(50%);}
+}
+@keyframes example {
+  0%{right:0px; opacity: 0.6;}
+  25%{right:3%; opacity: 0.8;}
+  50%{right:6%;}
+  100%{right:10%;}
+}
+
+}
+.main{
+  margin: auto;
+  width: 100%;
+
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+   /* Set a background color */
+  color: #555; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+ /* Some padding */
+  /* Rounded corners */
+  font-size: 50px;
+  /* Increase font size */
+}
+
+
+#myBtn:hover {
+  opacity: 0.6; /* Add a dark-grey background on hover */
+}
+.about{
+  padding:5% 8%;
+}
+.column-1{
+  float: left;
+  width: 45%;
+
+}
+.column-1 {
+  font-size: 1.5em;
+}
+
+.row-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.menu{
+  background-color: #cee8f0;
+  padding:5% 8%;
+}
+.column{
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.order{
+  padding:5% 8%;
+}
+.contact{
+  background-color: #cee8f0;
+  padding:5% 8%;
+}
+.about_image{
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer-distributed{
+  position: absolute;
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 33%;
+  margin-top: -15px;
+  padding-left: 2%;
+}
+
+.follow{
+  font-weight: bold;
+
+}
+
+.footer-company-name{
+  font-weight: normal;
+}
+
+
+.footer-distributed {
+	color:  #fefefa;
+	margin: auto ;
+	padding: 1%;
+
+}
+
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 33%;
+
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #fefefa;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #fefefa;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 15px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #fefefa;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.hours{
+  font: 15px sans-serif;
+
+
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #dea593;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cc7458;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f5fafc;
+  padding: 20px;
+  width: 60%;
+  margin:5% 20%;
+}
+
+
+@media (max-width:1086px) and (min-width:722px){
+  header{
+    height: 600px;
+  }
+  #hero{
+    margin-top: 10%;
+    background-size: cover;
+  }
+  #logo{
+    width:240px;
+    top:-20px;
+    left: 10px;
+  }
+  .column-1 {
+    width: 45%;
+    float: left;
+    font-size: 20px;
+  }
+  .about_image{
+
+  }
+  .col-m-1, .col-m-2{
+    width: 45%;
+    float: left;
+  }
+  .col-m-3{
+    width: 48%;
+    float: none;
+    margin-left: 25%;
+  }
+  .container{
+    width: 70%;
+    margin: 8% 13%;
+  }
+  .footer-distributed .footer-center p{
+  	font-weight: normal;
+  	font-size:14px;
+  	line-height:2;
+  }
+  .bottom-right{
+  font-size: 50px;
+  bottom: 20%;
+  right: 10%;animation-name: example;
+
+
+}
+
+
+
+}
+
+
+@media screen and (max-width:722px) {
+  #hero{
+    margin-top: 15%;
+    background-size: cover;
+  }
+
+  header{
+    height: 500px;
+  }
+  .column, .column-1 {
+    width: 100%;
+  }
+  .container{
+    width: 80%;
+    margin: 5%;
+  }
+  .column-1{
+    font-size: 20px;
+  }
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+   .footer-center{
+     margin-left: -2%;
+
+   }
+   .footer-left{
+     padding-left: 0;
+   }
+
+ .bottom-right{
+ font-size: 40px;
+ bottom: 15%;
+ right: 10%;
+ animation-name: example;
+padding-left: 10px;
+
+}
+#myLinks li {
+  float: none;
+}
+#myLinks{
+  display: none;
+  float: none;
+
+}
+.burger {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 1%;
+  width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+.fa2{
+  color:black;
+
+}
+#logo{
+  width:35%;
+  top:-10px;
+  left: 10px;
+}
+.about_image, .column{
+  padding: 0;
+  padding-bottom: 20px;
+}
+.row-2{
+  display: flex;
+  flex-flow: column;
+}
+.about_image{
+  order:2;
+  margin: auto;
+}
+.flex-p{
+  order:1;
+}
+
+}
