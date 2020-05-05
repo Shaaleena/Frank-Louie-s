@@ -28,7 +28,7 @@ nav ul li {
 float: left;
 }
 #logo{
-  width:350px;
+  width:300px;
   float: left;
   overflow: hidden;
   top:-70px;
@@ -57,7 +57,7 @@ float: left;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('FL_02345.jpg');
+  background-image: url("FL_02345.jpg");
   filter: brightness(50%);
   animation-name: heroimage;
   animation-duration:2s;
