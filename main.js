@@ -4,11 +4,11 @@ function myFunction() {
 
   if (x.style.display === "block") {
     x.style.display = "none";
-    y.style.marginTop="10%";
+    y.style.marginTop="15%";
 
   } else {
     x.style.display = "block";
-    y.style.margin="0";
+    y.style.marginTop="0";
 
   }
 }
