@@ -409,7 +409,7 @@ input[type=submit]:hover {
 
 
 }
-	.column-gal {
+.column-gal {
     -ms-flex: 50%;
     flex: 30%;
     max-width: 50%;
@@ -526,6 +526,11 @@ padding-left: 10px;
 .flex-p{
   order:1;
 }
+.column-gal {
+   -ms-flex: 100%;
+   flex: 100%;
+   max-width: 100%;
+ }
 
 iframe{
   margin: 0;
