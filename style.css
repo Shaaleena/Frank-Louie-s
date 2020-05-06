@@ -447,7 +447,11 @@ input[type=submit]:hover {
   .column-1{
     font-size: 20px;
   }
-
+.column-gal {
+   -ms-flex: 100%;
+   flex: 100%;
+   max-width: 100%;
+ }
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
@@ -526,11 +530,6 @@ padding-left: 10px;
 .flex-p{
   order:1;
 }
-.column-gal {
-   -ms-flex: 100%;
-   flex: 100%;
-   max-width: 100%;
- }
 
 iframe{
   margin: 0;
