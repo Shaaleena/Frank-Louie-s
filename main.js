@@ -4,6 +4,7 @@ function myFunction() {
 
   if (x.style.display === "block") {
     x.style.display = "none";
+    y.style.marginTop="10%";
 
   } else {
     x.style.display = "block";
