@@ -6,6 +6,7 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
