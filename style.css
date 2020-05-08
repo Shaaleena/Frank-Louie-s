@@ -484,13 +484,16 @@ input[type=submit]:hover {
 padding-left: 10px;
 
 }
-#myLinks li {
+.topnav{
+  display: none;
+}
+
+.responsive {
+  display: block;
   float: none;
 }
-#myLinks{
-  display: none;
+.responsive li{
   float: none;
-
 }
 .burger {
   display: block;
