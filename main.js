@@ -1,7 +1,7 @@
 function myFunction() {
   var x = document.getElementById("myLinks");
   var y= document.getElementById("hero");
-  if (x.className === "topnav" && y.className==="hero-img12-res") {
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
