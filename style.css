@@ -458,7 +458,7 @@ input[type=text], textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type=submit], #specialsBut {
   background-color: #dea593;
   color: white;
   padding: 12px 20px;
@@ -470,7 +470,9 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #cc7458;
 }
-
+#specialsBut:hover {
+  background-color: #cc7458;
+}
 .container {
   border-radius: 5px;
   background-color: #f5fafc;
