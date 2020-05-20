@@ -269,8 +269,8 @@ font-size: 1.5em;
 }
 .column{
   float: left;
-  width: 30%;
-  padding: 15px;
+  width: 23%;
+  padding: 5px;
 }
 .row:after {
   content: "";
@@ -503,15 +503,12 @@ input[type=submit]:hover {
   .about_image{
 
   }
-  .col-m-1, .col-m-2{
+  .column{
     width: 45%;
     float: left;
+    padding: 15px;	  
   }
-  .col-m-3{
-    width: 48%;
-    float: none;
-    margin-left: 25%;
-  }
+  
   .container{
     width: 70%;
     margin: 8% 13%;
