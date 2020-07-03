@@ -42,7 +42,7 @@ float: left;
   top:0px;
   left: 10px;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   height: auto;
 }
 .nav li a {
@@ -685,12 +685,12 @@ iframe{
    }
 
  .bottom-right{
- font-size: 30px;
+ font-size: 10px;
  bottom: 10%;
  right: 5%;
  animation-name: example;
  padding-left: 10px;
-
+ z-index: 0;
 }
 
 .topnav{
@@ -705,6 +705,7 @@ iframe{
 }
 .responsive li{
   float: none;
+
 }
 .burger {
   display: block;
