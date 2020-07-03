@@ -2,12 +2,13 @@
 function myFunction() {
   var x = document.getElementById("myLinks");
   var y= document.getElementById("hero");
+  var fr1=document.getElementById("frnote");
   if (x.className === "topnav") {
     x.className += " responsive";
-
+    fr1.style.display="none";
   } else {
     x.className = "topnav";
-
+    fr1.style.display="block";
   }
 }
 
