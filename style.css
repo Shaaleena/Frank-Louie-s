@@ -17,7 +17,15 @@ header{
   position: relative;
   height: 700px;
 }
-
+.hero-bckgrnd{
+  background-color: #cee8f0;
+  width: 100%;
+  margin-top: 80px;
+  height: 150px;
+}
+.menu-header{
+  height: 200px;
+}
 ul{
     position: sticky;
     list-style-type: none;
@@ -31,10 +39,10 @@ float: left;
   width:300px;
   float: left;
   overflow: hidden;
-  top:-70px;
+  top:0px;
   left: 10px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   height: auto;
 }
 .nav li a {
@@ -54,52 +62,17 @@ float: left;
   margin-top: 8%;
   width: 100%;
   height: 100%;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("FL_02345.jpg");
   filter: brightness(50%);
-  animation-name: heroimage;
+}
+.hero-img1{
+  background-image: url('FL_02345.jpg');
+  /*animation-name: heroimage;
   animation-duration:2s;
   animation-delay: -1s;
-  animation-timing-function: linear;
-}
-.bottom-right{
-  font-size: 100px;
-}
-.bottom-right {
-  color: #fefefa;
-  font-family: 'Dancing Script', cursive;
-  font-size: 90px;
-  position: absolute;
-  bottom: 15%;
-  right: 10%;
-  opacity: 0.9;
-  animation-name: example;
-  animation-duration: 2s;
-  animation-delay: -1s;
-  animation-timing-function: linear;
-
-}
-@keyframes heroimage {
-  0%{filter: brightness(100%);}
-  25%{filter: brightness(90%);}
-  50%{filter: brightness(80%);}
-  75%{filter: brightness(70%);}
-  100%{filter: brightness(50%);}
-}
-@keyframes example {
-  0%{right:0px; opacity: 0.6;}
-  25%{right:3%; opacity: 0.8;}
-  50%{right:6%;}
-  100%{right:10%;}
-}
-
-}
-.main{
-  margin: auto;
-  width: 100%;
-
+  animation-timing-function: linear;*/
 }
 .modal {
   display: none; /* Hidden by default */
@@ -118,7 +91,8 @@ float: left;
 /* Modal Content */
 .modal-content {
   background-color: #cee8f0;
-  padding:5% 5%;
+  padding:1% 1%;
+  padding-bottom: 3%;
   margin: auto;
   border: 1px solid #888;
   width: 60%;
@@ -137,9 +111,13 @@ float: left;
 .column-modal p{
 font-size: 1.5em;
 }
+.col-m-2{
+  margin-left: 5%;
+}
 .row-modal{
   max-width: 100%;
   height: auto;
+  text-align: center;
 
 }
 .row-modal:after {
@@ -147,8 +125,14 @@ font-size: 1.5em;
   display: table;
   clear: both;
 }
-.modal-text{
-  margin-top:20%;
+
+.row-modal img{
+  width: 60%;
+  margin-top: 5%;
+}
+.row-modal p{
+  font-size: 20px;
+
 }
 
 .fade-in {
@@ -218,7 +202,47 @@ font-size: 1.5em;
   text-decoration: none;
   cursor: pointer;
 }
-#myBtn {
+
+
+.bottom-right{
+  color: #fefefa;
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: -0.3s;
+
+}
+.bottom-right p{
+  font-size: 50px;
+  padding: 0;
+  margin: 5px;
+}
+
+@keyframes heroimage {
+  0%{filter: opacity(0);}
+  25%{filter: opacity(0.3);}
+  50%{filter: opacity(0.8);}
+  75%{filter: opacity(0.9);}
+  100%{filter: opacity(0.5);}
+}
+@keyframes example {
+  0%{right:0px; opacity: 0.6;}
+  25%{right:2%; opacity: 0.8;}
+  50%{right:4%;}
+  100%{right:5%;}
+}
+
+}
+.main{
+  margin: auto;
+  width: 100%;
+
+}
+#myBtn{
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -241,6 +265,7 @@ font-size: 1.5em;
 }
 .about{
   padding:5% 8%;
+
 }
 .column-1{
   float: left;
@@ -249,7 +274,15 @@ font-size: 1.5em;
 }
 .column-1 {
   font-size: 1.5em;
+  text-align: left;
 }
+.column-1::first-letter {
+  font-size: 160%;
+  color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+
 
 .row-1:after {
   content: "";
@@ -267,9 +300,10 @@ font-size: 1.5em;
   background-color: #cee8f0;
   padding:5% 8%;
 }
+
 .column{
   float: left;
-  width: 23%;
+  width: 45%;
   padding: 5px;
 }
 .row:after {
@@ -279,6 +313,7 @@ font-size: 1.5em;
 }
 .order, .gallery{
   padding:5% 8%;
+  background-color: #f5fafc;
 }
 .order{
   background-color: #cee8f0;
@@ -305,19 +340,18 @@ font-size: 1.5em;
   width: 100%;
 }
 
+
 .contact{
+
   padding:5% 8%;
 }
 .about_image{
   margin: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 2px;
 }
-
-iframe{
-  margin:5% 15%;
-  width: 70%;
-  height:400px;
+.ordtxt{
+  font-size: 1.2em;
 }
 .footer-distributed{
   position: absolute;
@@ -473,12 +507,35 @@ input[type=submit]:hover {
 #specialsBut:hover {
   background-color: #cc7458;
 }
+
 .container {
   border-radius: 5px;
   background-color: #f5fafc;
   padding: 20px;
   width: 60%;
   margin:5% 20%;
+}
+iframe{
+  margin:5% 15%;
+  width: 70%;
+  height:400px;
+}
+#gal {
+  position: relative
+}
+
+#gal span {
+  display: none;
+  position: absolute;
+  top: 30%;
+  width: 200px;
+  padding: 20px;
+  background: rgba(255,255,255,.8);
+}
+
+
+#gal:hover span {
+  display: block;
 }
 
 
@@ -492,7 +549,7 @@ input[type=submit]:hover {
   }
   #logo{
     width:240px;
-    top:-20px;
+    top:20px;
     left: 10px;
   }
   .column-1 {
@@ -506,9 +563,13 @@ input[type=submit]:hover {
   .column{
     width: 45%;
     float: left;
-    padding: 15px;	  
+    padding: 15px;
   }
-  
+/*  .col-m-3, .col{
+    width: 48%;
+    float: none;
+    margin-left: 25%;
+  }*/
   .container{
     width: 70%;
     margin: 8% 13%;
@@ -519,21 +580,24 @@ input[type=submit]:hover {
   	line-height:2;
   }
   .bottom-right{
-  font-size: 50px;
-  bottom: 20%;
-  right: 10%;animation-name: example;
-
-
+  font-size: 40px;
+  bottom: 10%;
+  right: 5%;
+  animation-name: example;
 }
-	.modal-content {
+.modal-content {
   background-color: #cee8f0;
-  padding:3% 3%;
+  padding:2% 2%;
+  padding-bottom: 3%;
   margin: auto;
   border: 1px solid #888;
   width: 60%;
   height: auto;
 }
-.column-modal{
+.col-m-2{
+  margin-left: 0%;
+}
+/*.column-modal{
   float: left;
   width: 45%;
   padding: 0px 10px;
@@ -542,15 +606,16 @@ input[type=submit]:hover {
 .column-modal img{
   max-width: 70%;
   height: auto;
-}
+}*/
 .row-modal{
   max-width: 100%;
   height: auto;
 }
+
 .modal-text{
   margin-top:8%;
 }
-.column-gal {
+  .column-gal {
     -ms-flex: 50%;
     flex: 30%;
     max-width: 50%;
@@ -564,8 +629,6 @@ input[type=submit]:hover {
     height:400px;
   }
 
-
-
 }
 
 
@@ -573,6 +636,10 @@ input[type=submit]:hover {
   #hero{
     margin-top: 15%;
     background-size: cover;
+  }
+
+  .nav li a {
+    font-size: 1.5em;
   }
 
   header{
@@ -588,7 +655,7 @@ input[type=submit]:hover {
   .column-1{
     font-size: 20px;
   }
-.column-gal {
+  .column-gal {
    -ms-flex: 100%;
    flex: 100%;
    max-width: 100%;
@@ -619,16 +686,19 @@ input[type=submit]:hover {
 
  .bottom-right{
  font-size: 40px;
- bottom: 15%;
- right: 10%;
+ bottom: 10%;
+ right: 5%;
  animation-name: example;
-padding-left: 10px;
+ padding-left: 10px;
 
 }
+
 .topnav{
   display: none;
 }
-
+.col-m-2{
+  margin-left: 0%;
+}
 .responsive {
   display: block;
   float: none;
@@ -656,7 +726,7 @@ padding-left: 10px;
 }
 #logo{
   width:35%;
-  top:-10px;
+  top:20px;
   left: 10px;
 }
 .about_image, .column{
@@ -674,18 +744,26 @@ padding-left: 10px;
 .flex-p{
   order:1;
 }
-
 iframe{
   margin: 0;
   width: 100%;
   height:250px;
 }
-.nav li a {
-  font-size: 1.5em;
-  }
-	.modal-content {
+.hero-bckgrnd{
   background-color: #cee8f0;
-  padding:3% 3%;
+  width: 100%;
+  margin-top: 80px;
+  height: 220px;
+}
+.menu-header{
+  height: 300px;
+}
+.menu-header-resp{
+  height: 200px;
+}
+.modal-content {
+  background-color: #cee8f0;
+  padding:2% 2%;
   margin: auto;
   border: 1px solid #888;
   width: 90%;

@@ -6,6 +6,7 @@
     <title>Frank & Louie's</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,11 +14,11 @@
   <body>
     <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
     <header>
-      <a href="index.html"><img id= "logo" src="iu-2.png" alt="logo of the Frank & Louie's"></a>
+    <a href="index.html"><img id= "logo" src="FrLogo.png" alt="logo of the Frank & Louie's"></a>
       <nav class="nav">
         <ul id="myLinks" class="topnav">
           <li><a href="#about">ABOUT US</a></li>
-          <li><a href="#menu">MENU</a></li>
+          <li><a href="menu.html">MENU</a></li>
           <li><a href="#gallery">GALLERY</a></li>
           <li><a href="#order">ORDER</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -29,27 +30,33 @@
   </a>
 </div>
 
-      <div id="hero">
+      <div id="hero" class="mySlides hero-img1 fading hero-img12-res">
       </div>
-      <div class="bottom-right">Family owned and <br>operated Italian Deli</div>
+      <!--<img id="hero" src="istockphoto-184979776-2048x2048.jpg" alt="hero image">-->
+      <div class="bottom-right"><p id="fr1">Sandwiches,</p>
+                                <p id="fr2"> Cheeses, </p>
+                                <p id="fr3">Homemade Baked Goods, </p>
+                                <p id="fr4">Quality Prepared Foods</p>
+      </div>
     </header>
 
      <div class="main">
-       
-       <!-- The Modal -->
+
+<!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="row-modal">
-      <div class="column-modal">
+    <!--  <div class="column-modal">
         <img src="FL_is_011.png" alt="special">
-        </div>
-      <div class="column-modal modal-text">
-        <p>Check out weekly specials on our Facebook Page</p>
+      </div>-->
+      <!--<div class="column-modal modal-text">-->
+        <img id="mod-img" src="20200415_175950.jpg" alt="">
+        <p>Don't forget to check out specials on our Facebook Page!</p>
         <a href="https://www.facebook.com/Frank-Louies-Italian-Specialties-493947190659653/"> <button type="button" name="button" id="specialsBut">SPECIALS</button> </a>
-      </div>
+    <!--  </div>-->
 
     </div>
   </div>
@@ -60,42 +67,16 @@
          <a name="about"></a>
          <h1>ABOUT US</h1>
          <div class="row-1">
-         <p class="column-1">This an introduction text. It has a fixed size, and a
-           custom line height, so you can experiment with it.
-           Lorem ipsum dolor sit amet, consectetur
-           adipiscing elit.
-           Cras dapibus vulputate diam eu pretium. This an
-           introduction text. It has a fixed size, and a custom
-           line height, so you can experiment with it. Lorem
-           ipsum dolor sit amet, consectetur adipiscing elit.
-           Cras dapibus vulputate diam eu pretium.
-           This an introduction text. It has a fixed size, and a
-           custom line height, so you can experiment with it.
-           Lorem ipsum dolor sit amet, consectetur
-           adipiscing elit. Cras dapibus vulputate diam eu
-           pretium.</p>
-           <img class="about_image column-1" src="60233732_2326626797391674_3635314392972656640_o.jpg" alt="family picture">
+         <p class="column-1"><span id="frnkabout">Frank and Louie's </span> Italian Specialties is a family owned and operated deli, bakery and specialty store nestled in the heart of <em>Rehoboth Beach, Delaware.</em>  Located just steps from the beach on beautiful Baltimore Avenue. The Bascio Family has a rich history of baking and preparing delicious foods for your table.  Brothers Frank and Louie, Mom Diane, Aunt Joanne, along with Louie's wife Robin and longtime family friend Brendan are always here to help make your Frank and Louie's experience a memorable one!</p>
+           <img class="about_image column-1" src="IMG_1507771619919.jpg" alt="family picture">
            </div>
           <div class="row-2">
            <img class="about_image column-1" src="60899180_2346242575430096_4804732772474159104_n.jpg" alt="family picture">
-           <p class="column-1 flex-p">This an introduction text. It has a fixed size, and a
-             custom line height, so you can experiment with it.
-             Lorem ipsum dolor sit amet, consectetur
-             adipiscing elit.
-             Cras dapibus vulputate diam eu pretium. This an
-             introduction text. It has a fixed size, and a custom
-             line height, so you can experiment with it. Lorem
-             ipsum dolor sit amet, consectetur adipiscing elit.
-             Cras dapibus vulputate diam eu pretium.
-             This an introduction text. It has a fixed size, and a
-             custom line height, so you can experiment with it.
-             Lorem ipsum dolor sit amet, consectetur
-             adipiscing elit. Cras dapibus vulputate diam eu
-             pretium.</p>
+           <p class="column-1 flex-p">Focusing on the families of today, and steeped in over two decades of family tradition, Frank and Louie's offers a vast array of Prepared Foods, including ready to serve, "Heat and Eat" entrees, mouthwatering made-to-order Sandwiches, and Homemade Baked Goods.  Featuring a complete selection of premium Cheeses and Meats along with carefully selected Italian pantry staples such as DOP canned tomatoes, Imported olive oils and vinegars.  Homemade Tomato Basil Sauce, fresh mozzarella and  ricotta, just baked bread from Rockland Bakery in NY and Pastosa Ravioli and sausage are just a sampling of the delicious items found here. </p>
              </div>
        </div>
 
-       <div class="menu">
+    <!--   <div class="menu">
          <a name="menu"></a>
          <h1>MENU</h1>
          <div class="row">
@@ -104,55 +85,77 @@
          <img class="column col-m-3" src="bkdgoods.jpg" alt="menu page 3">
          <img class="column col-m-4" src="antipasti.jpg" alt="menu page 4">
          </div>
-       </div>
-       
+
+       </div>-->
        <div class="gallery">
          <a name="gallery"></a>
          <h1>GALLERY</h1>
          <div class="row-gal">
            <div class="column-gal">
+             <a id="gal">
+             <img src="media/60233732_2326626797391674_3635314392972656640_o.jpg">
+             <span>Frank, Louie and Mom Diane</span>
+           </a>
+           <a id="gal">
              <img src="media/FL_004.jpg">
+             <span>Lemon Bar</span>
+           </a>
              <img src="media/FL_005.jpg">
              <img src="media/FL_010.jpg">
              <img src="media/FL_018.jpg">
              <img src="media/FL_012.jpg">
              <img src="media/FL_is_019.jpg">
+             <img src="media/20200613_145624.jpg" alt="">
            </div>
            <div class="column-gal">
+
              <img src="media/FL_019.jpg">
              <img src="media/FL_21.jpg">
              <img src="media/FL_024.jpg">
              <img src="media/FL_i_002.png">
              <img src="media/FL_i_006.png">
              <img src="media/FL_i_009.jpg">
+             <img src="media/20200622_065458.jpg">
            </div>
            <div class="column-gal">
+             <a id="gal">
+             <img src="media/photo_2020-07-02 19.02.16.jpg">
+             <span>Louie And His Wife Robin</span>
+           </a>
              <img src="media/FL_is_013.png">
              <img src="media/FL_i_010.png">
+              <a id="gal">
             <img src="media/FL_i_011.png">
-            <img src="media/FL_i_015.png">
+            <span>Proscuito</span>
+          </a>
+            <img src="media/Screenshot_20190216-145833_Facebook.jpg">
             <img src="media/FL_i_019.png">
 
-         </div>
-         </div>
+
+  </div>
+
+</div>
+
        </div>
 
        <div class="order">
           <a name="order"></a>
          <h1>ORDER</h1>
-         <h2>ONLINE</h2>
+         <!--<h2>ONLINE</h2>
             <p>Place order online and pick-up &nbsp; &nbsp;<a href="YOUR-ONLINE-ORDERING-URL" target="_blank"><img src="https://cdn2.hubspot.net/hubfs/412971/Toast%20Digital%20Ordering%20Buttons/Toast%20TakeOut%20Buttons/TTO_full-logo-horiz-orange.png"></a></p>
-         <h2>CALL-IN</h2>
-            <p>Call and place the order by phone (302) 227-5777 and pick-up at
-58             Baltimore Avenue, Rehoboth Beach, Delaware</p>
+         --><h2>CALL-IN</h2>
+            <p class="ordtxt">For the Health & Safety of all, we are no longer having customers enter the store. Call-in to place the order and pay over the phone <b>(302) 227-5777</b>. Pick-up at
+            <em>58 Baltimore Avenue, Rehoboth Beach, Delaware</em>  at our front door. Thank you!</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.2608339272723!2d-75.08192388106656!3d38.716814031122425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b66917b6e06f%3A0x4030f643c18bef23!2sFrank%20%26%20Louie&#39;s%20Italian%20Specialties!5e0!3m2!1sen!2sus!4v1588786243751!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-           </div>
+            </div>
+
 
        <div class="contact">
           <a name="contact"></a>
          <h1>CONTACT US</h1>
-         <p>This is a collection of symbols for quickly mocking up web applications, created by
-            your friends at Bohemian Coding and released under the MIT license.</p>
+         <p class="ordtxt">Quality food deserves quality personalized planning and service. If your order requires more one-on-one time, please allow us to help you!
+         Reach out to Frank and Louie's and we will be happy to guide you through our Prepared Foods menu to help you plan the perfect gathering.
+       We look forward to hearing from you!</p>
             <div class="container">
     <form action="/action_page.php">
       <label for="fname">Your Name</label>
@@ -208,9 +211,9 @@
      					<span>HOURS</span>
               </p>
      				<div class="footer-icons hours">
-              <p>Monday, Thursday, Friday, Saturday: 10AM-6PM </p>
-                <p>Sunday: 10AM–4PM </p>
-                <p>Tuesday, Wednesday: Closed</p>
+              <p>Open 6 days in week: 10AM-6PM </p>
+
+                <p> Wednesday: Closed</p>
 
      				</div>
 
