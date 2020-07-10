@@ -230,23 +230,6 @@ font-size: 1.5em;
 }
 
 
-.bottom-right{
-  color: #fefefa;
-  font-family:  serif;
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  animation-name: example;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-delay: -0.3s;
-
-}
-.bottom-right p{
-  font-size: 50px;
-  padding: 0;
-  margin: 5px;
-}
 
 @keyframes heroimage {
   0%{filter: brightness(80%);}
@@ -467,8 +450,6 @@ font-size: 1.5em;
 	line-height:2;
 }
 
-
-
 /* Footer Right */
 
 .footer-distributed .footer-right{
@@ -590,19 +571,13 @@ iframe{
     float: left;
     font-size: 20px;
   }
-  .about_image{
 
-  }
   .column{
     width: 45%;
     float: left;
     padding: 15px;
   }
-/*  .col-m-3, .col{
-    width: 48%;
-    float: none;
-    margin-left: 25%;
-  }*/
+
   .container{
     width: 70%;
     margin: 8% 13%;
@@ -612,12 +587,7 @@ iframe{
   	font-size:14px;
   	line-height:2;
   }
-  .bottom-right{
-  font-size: 40px;
-  bottom: 10%;
-  right: 5%;
-  animation-name: example;
-}
+
 .modal-content {
   background-color: #cee8f0;
   padding:2% 2%;
@@ -638,16 +608,7 @@ iframe{
   left: 12%;
   font-size: 25px;
 }
-/*.column-modal{
-  float: left;
-  width: 45%;
-  padding: 0px 10px;
-  height: auto;
-}
-.column-modal img{
-  max-width: 70%;
-  height: auto;
-}*/
+
 .row-modal{
   max-width: 100%;
   height: auto;
@@ -743,9 +704,7 @@ iframe{
  padding-left: 10px;
  z-index: 0;
 }
-#fr1,#fr2,#fr3,#fr4{
-  font-size: 40px;
-}
+
 .topnav{
   display: none;
 }
