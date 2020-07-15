@@ -334,7 +334,7 @@ font-size: 1.5em;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+
 .column-gal {
   -ms-flex: 25%; /* IE10 */
   flex: 32%;

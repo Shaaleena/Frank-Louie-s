@@ -42,15 +42,7 @@ window.onclick = function(event) {
   }
 }
 
-//  if (x.style.display === "block") {
-//    x.style.display = "none";
-//    y.style.marginTop="15%";
 
-//  } else {
-//    x.style.display = "block";
-//    y.style.marginTop="0";
-
-//  }
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
